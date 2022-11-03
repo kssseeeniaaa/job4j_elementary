@@ -5,9 +5,9 @@ public class DivideBySix {
         String rsl;
         if (number % 3 == 0 && number % 2 == 0) {
             rsl = "The number divides by 6.";
-        } else if (number % 3 == 0 && number % 2 == 1) {
+        } else if (number % 3 == 0 && number % 2 != 0) {
             rsl = "The number divides by 3, but it isn't the even number.";
-        } else if ((number % 3 == 1 || number % 3 == 2) && number % 2 == 0) {
+        } else if (number % 3 != 0 && number % 2 == 0) {
             rsl = "The number doesn't divide by 3, but it is the even number.";
         } else {
             rsl = "The number doesn't divide by 3 and it isn't the even number.";
@@ -20,7 +20,7 @@ public class DivideBySix {
         System.out.println(result);
         result = checkNumber(17);
         System.out.println(result);
-        result = checkNumber(16);
+        result = checkNumber(25);
         System.out.println(result);
     }
 }
