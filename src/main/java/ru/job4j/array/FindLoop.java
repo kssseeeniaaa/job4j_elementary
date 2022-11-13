@@ -9,9 +9,6 @@ public class FindLoop {
                 break;
             }
         }
-        if (el > data.length) {
-            return rst;
-        }
         return rst;
     }
 }
