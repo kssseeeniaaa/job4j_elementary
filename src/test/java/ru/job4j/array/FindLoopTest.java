@@ -37,7 +37,7 @@ public class FindLoopTest {
         int el = 8;
         int start = 2;
         int finish = 5;
-        int result = FindLoop.indexRange(data, el, start, finish);
+        int result = FindLoop.indexInRange(data, el, start, finish);
         int expected = 5;
         assertThat(result).isEqualTo(expected);
     }
@@ -48,7 +48,7 @@ public class FindLoopTest {
         int el = 4;
         int start = 1;
         int finish = 8;
-        int result = FindLoop.indexRange(data, el, start, finish);
+        int result = FindLoop.indexInRange(data, el, start, finish);
         int expected = 3;
         assertThat(result).isEqualTo(expected);
     }
@@ -59,7 +59,7 @@ public class FindLoopTest {
         int el = 2;
         int start = 2;
         int finish = 4;
-        int result = FindLoop.indexRange(data, el, start, finish);
+        int result = FindLoop.indexInRange(data, el, start, finish);
         int expected = 3;
         assertThat(result).isEqualTo(expected);
     }
@@ -70,7 +70,7 @@ public class FindLoopTest {
         int el = 8;
         int start = 2;
         int finish = 4;
-        int result = FindLoop.indexRange(data, el, start, finish);
+        int result = FindLoop.indexInRange(data, el, start, finish);
         int expected = -1;
         assertThat(result).isEqualTo(expected);
     }
@@ -81,7 +81,7 @@ public class FindLoopTest {
         int el = 7;
         int start = 3;
         int finish = 5;
-        int result = FindLoop.indexRange(data, el, start, finish);
+        int result = FindLoop.indexInRange(data, el, start, finish);
         int expected = 4;
         assertThat(result).isEqualTo(expected);
     }
@@ -92,7 +92,7 @@ public class FindLoopTest {
         int el = 17;
         int start = 1;
         int finish = 4;
-        int result = FindLoop.indexRange(data, el, start, finish);
+        int result = FindLoop.indexInRange(data, el, start, finish);
         int expected = -1;
         assertThat(result).isEqualTo(expected);
     }
