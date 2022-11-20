@@ -24,31 +24,4 @@ public class MatrixCheck {
         }
         return result;
     }
-
-    public static char[] extractDiagonal(char[][] board) {
-        char[] rsl = new char[board.length];
-        if (board.length % 2 == 1) {
-            for (int i = 0; i < board.length; i++) {
-                rsl[i] = board[i][i];
-            }
-        }
-        return rsl;
-    }
-
-    public static boolean isWin(char[][] board) {
-        boolean result = false;
-        for (int i = 0; i < board.length; i++) {
-            if (board[i][i] == 'X') {
-                if (board[0][i] == board[i][i]) {
-                    result = true;
-                    break;
-                }
-                if (board[i][0] == board[i][i]) {
-                    result = true;
-                    break;
-                }
-            }
-        }
-        return result;
-    }
 }
