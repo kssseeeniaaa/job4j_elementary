@@ -8,12 +8,12 @@ public class Machine { //купюра из кармана; //цена покуп
         int[] rsl = new int[100]; //сдача в виде массива монет
         int size = 0; //размер массива rsl, которого он достигнет
         // после того, как автомат отдаст всю сдачу
-        int[] coinsmax = SortSelected.sortforMax(coins);
+        int[] max = SortSelected.sortforMax(coins);
         int sum = money - price;
-        for (int index = 0; index < coinsmax.length; index++) {
-            while (sum >= coinsmax[index]) {
-                rsl[size] = coinsmax[index];
-                sum = sum - coinsmax[index];
+        for (int index = 0; index < max.length; index++) {
+            while (sum >= max[index]) {
+                rsl[size] = max[index];
+                sum = sum - max[index];
                 size++;
             }
         }
