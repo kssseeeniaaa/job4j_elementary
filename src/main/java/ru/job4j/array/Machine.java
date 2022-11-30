@@ -4,15 +4,14 @@ import java.util.Arrays;
 
 public class Machine {
     public static int[] change(int money, int price) {
-        int[] coins = {1, 5, 2, 10};
+        int[] coins = {10, 5, 2, 1};
         int[] rsl = new int[100];
         int size = 0;
-        int[] max = SortSelected.sortforMax(coins);
         int sum = money - price;
-        for (int index = 0; index < max.length; index++) {
-            while (sum >= max[index]) {
-                rsl[size] = max[index];
-                sum = sum - max[index];
+        for (int index = 0; index < coins.length; index++) {
+            while (sum >= coins[index]) {
+                rsl[size] = coins[index];
+                sum = sum - coins[index];
                 size++;
             }
         }
