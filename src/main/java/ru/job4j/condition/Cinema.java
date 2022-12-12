@@ -7,12 +7,12 @@ public class Cinema {
         if (age >= 18) {
             System.out.println("Welcome to the cinema");
         } else {
-            System.out.println("If is not for you");
+            System.out.println("It is not for you");
         }
     }
 
     public static void main(String[] args) {
-        Cinema.access(21);
-        Cinema.access(16);
+        access(21);
+        access(16);
     }
 }

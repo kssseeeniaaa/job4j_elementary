@@ -12,15 +12,13 @@ public class DivideBySix {
         } else {
             rsl = "The number doesn't divide by 3 and it isn't the even number.";
         }
+        System.out.println(rsl);
         return rsl;
     }
 
     public static void main(String[] args) {
-        String result = checkNumber(18);
-        System.out.println(result);
-        result = checkNumber(17);
-        System.out.println(result);
-        result = checkNumber(25);
-        System.out.println(result);
+        checkNumber(18);
+        checkNumber(17);
+        checkNumber(25);
     }
 }

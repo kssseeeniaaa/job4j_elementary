@@ -6,7 +6,6 @@ public class Max {
     }
 
     public static void main(String[] args) {
-        int rs1 = Max.max(4, 5);
-        System.out.println(rs1);
+        System.out.println(max(4, 5));
     }
 }

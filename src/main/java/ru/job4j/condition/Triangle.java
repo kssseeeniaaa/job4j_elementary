@@ -7,7 +7,6 @@ public class Triangle {
     }
 
     public static void main(String[] args) {
-        boolean rs1 = Triangle.exist(4, 4, 4);
-        System.out.println(rs1);
+        System.out.println(exist(4, 4, 4));
     }
 }

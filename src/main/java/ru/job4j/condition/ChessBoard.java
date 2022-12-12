@@ -17,9 +17,7 @@ public class ChessBoard {
     }
 
     public static void main(String[] args) {
-        int result = ChessBoard.way(1, 5, 2, 4);
-        System.out.println(result);
-        result = ChessBoard.way(2, 4, 1, 5);
-        System.out.println(result);
+        System.out.println(way(1, 5, 2, 4));
+        System.out.println(way(2, 4, 1, 5));
     }
 }
